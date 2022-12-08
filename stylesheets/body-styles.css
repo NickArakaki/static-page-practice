@@ -1,0 +1,130 @@
+/* trending categories */
+.trending-categories {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+}
+
+.trending-categories-header,
+.events-header {
+    color: #6f7287;
+}
+
+.trending-categories-category-link {
+    color: #6f7287;
+}
+
+.trending-categories-category-link:hover {
+    color: #f05537;
+}
+
+.trending-categories-container {
+    display: flex;
+    justify-content: space-between;
+    gap: .75rem;
+}
+
+.trending-categories-category-link {
+    margin: 0 .25rem;
+}
+
+.trending-categories-category-label {
+    margin: 0 .25rem;
+}
+
+.button {
+    width: 25%;
+    border: none;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem .25rem;
+    box-shadow: 2px 2px 5px #6f7287;
+    color: #6f7287;
+    font-size: .75rem;
+    box-sizing: border-box;
+}
+
+.button:hover {
+    color: #f05537;
+    box-shadow: 2px 2px 5px #f05537;
+}
+
+/* events */
+.events-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr;
+    grid-template-areas:
+    "header header"
+    "event1 event2"
+    "event3 event4";
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.events-header {
+    margin: 0;
+}
+
+.event {
+    display: grid;
+    grid-template-rows: 60% 10% 30%;
+    /* padding: 1rem; */
+}
+
+.event__title {
+    text-decoration: underline;
+
+    color: purple;
+    font-size: 1rem;
+    font-weight: bold;
+    align-self: center;
+}
+
+.event__title:hover {
+    color: #f05537;
+}
+
+.event__image {
+    height: 100%;
+    width: 100%;
+}
+
+.event1 {
+    grid-area: event1;
+}
+
+.event2 {
+    grid-area: event2;
+}
+
+.event3 {
+    grid-area: event3;
+}
+
+.event__date-and-price {
+    display: flex;
+    justify-content: space-between;
+    color:#6f7287;
+    font-size: 0.75rem;
+}
+
+.event__date-and-price-price {
+    align-self: center;
+}
+
+
+/* mobile screen */
+@media screen and (max-width: 700px) {
+    .trending-categories-container,
+    .events-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trending-categories-category {
+        width: 100%;
+    }
+}

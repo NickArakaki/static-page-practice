@@ -1,0 +1,9 @@
+.main__footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #1e0a3c;
+    color: #fff;
+    padding: 1rem;
+    margin: 1rem 1rem;
+}
