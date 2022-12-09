@@ -72,7 +72,6 @@
 .event {
     display: grid;
     grid-template-rows: 60% 10% 30%;
-    /* padding: 1rem; */
 }
 
 .event__title {
