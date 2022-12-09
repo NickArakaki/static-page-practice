@@ -58,6 +58,10 @@ a {
     border-right: none;
 }
 
+.navigation {
+    max-width: fit-content;
+}
+
 .navigation-links {
     display: flex;
     justify-content: space-around;
@@ -67,7 +71,8 @@ a {
 }
 
 .navigation-links__link {
-    margin-right: 50px;
+    display: inline-block;
+    margin: 1rem 1rem;
     color: #f05537;
 }
 

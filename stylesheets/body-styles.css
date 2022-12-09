@@ -44,6 +44,7 @@
     color: #6f7287;
     font-size: .75rem;
     box-sizing: border-box;
+    border-radius: 5px;
 }
 
 .button:hover {
@@ -90,6 +91,7 @@
 .event__image {
     height: 100%;
     width: 100%;
+    border-radius: 14px;
 }
 
 .event1 {
